@@ -16,7 +16,7 @@ This was a part of my summer research internship with Department of Computer Sci
 - The app should be running now on `localhost:3000`
 
 **Demo Video on how to use the application**
-[Image](CS-Trackulum/Screenshot 2019-02-23 at 11.01.35 PM.png)
+[![Image](https://user-images.githubusercontent.com/20404572/53288207-df3bd680-37c0-11e9-9ba2-0d1b63f81473.png)](https://www.youtube.com/watch?v=okPwni7t-e0&t=3s)
 
 
 **Dependency List**
