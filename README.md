@@ -16,7 +16,7 @@ This was a part of my summer research internship with Department of Computer Sci
 - The app should be running now on `localhost:3000`
 
 **Demo Video on how to use the application**
-[Youtube Link]()
+[Youtube Link](https://www.youtube.com/watch?v=okPwni7t-e0&t=3s)
 
 **Dependency List**
 - bcryptjs
