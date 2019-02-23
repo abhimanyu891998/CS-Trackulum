@@ -16,7 +16,7 @@ This was a part of my summer research internship with Department of Computer Sci
 - The app should be running now on `localhost:3000`
 
 **Demo Video on how to use the application**
-[[Image](https://lh3.googleusercontent.com/7DyLW36I2lBtcAjbaLybg5kkzwDWIFQL_2qvcxT6TXaHCrsc47PZHzXTvWPDFI6Oa-tV3fUoZA3ZXXzqC8BxgjSwP-AmeirGZjqFF9yOo4OmG_W83I2IgwzhpJl-EAu5U-dcY5hfJQOE6P1-mszVPIHB9nPq6TJ41pEy4q7_AaxhCeDIg4oKspJAZ6u0q3Jqz-L2yXap9n4u1GDsyGGDz81Y_IQevvNvjBFnDpR5BCUYj8uXJmy15KiIeK2jQ-M-rx9evqG1h557oxy2-75ivL32Nhg5sCrGjiYLK4HHBkasho5Mc_fjVi6J5ie6a_zfSbS8xE1ykbjfdhF3qnUnLPKYBqrRHV0-X49ybr0PcGxt-mU8x128CdL_Leg5UwH3WLYytYEcSZHLVSnJewh5bVrixGdcGTkVHKK6n_PBDEswXJJq2Edc6yYNp22UivXOiglDc514EAkfjWWfWadUQdDjj1Pb7DYTnhtLkY9dYiDCm71OkeB6Tinn7vMg7Diq4a6-A11KuHKT8K5mh0oOVXN0qKW5h9KoQv75x1n-O6E1r8PmpB7mBfvcQolGwanAutZ1O4LxGKDE0-oBulCDWlY5Iqeg4DgVlnbxtwa__A3VeCVKib9PLXYDfdeQ2TwvNWxDebDjNJxnAOn7ceUydmOVvi7UWQzp=w531-h226-no)]
+[[Image](/Screenshot 2019-02-23 at 11.01.35 PM.png)]
 (https://www.youtube.com/watch?v=okPwni7t-e0&t=3s)
 
 **Dependency List**
