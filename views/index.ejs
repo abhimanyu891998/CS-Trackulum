@@ -1,0 +1,9 @@
+<% include partials/header %>
+<ul>
+    <% 
+    for(var i=0; i < dropdownvals.length; i++) { 
+        var uid = dropdownvals[i].uid; %>
+       <li><a href = "/courses/<%= dropdownvals[i].uid %>" class="show_unis" data-id="<%= dropdownvals[i].uid %>"><%= dropdownvals[i].uname %></a></li>
+    <% } %>
+</ul>
+<% include partials/footer %>

@@ -1,0 +1,41 @@
+<% include partials/header %>
+<div class = "w3-center">
+<% if(modulelist.length===0){%>
+    <h1>Sorry, No Info available for this module</h1>
+    <h3>We are still populating our database, stay tuned!</h3>
+<%}
+ else
+ for(var i=0 ; i<modulelist.length ; i++)
+{ %>
+    
+    <div class="w3-card-4">
+        <header class="w3-container w3-teal">
+          <h4>(<%= modulelist[i].modulecode %>) <%=modulelist[i].modulename%></h4>
+        </header>
+    
+        <div class="w3-container">
+          <p><%= modulelist[i].moduleinfo %></p>
+        </div>
+
+        <footer class="w3-container w3-grey">
+            <ul style = "display: inline-block ; list-style-type: none" class="w3-center">
+            <li style= "float: left ; display: block ; padding: 10px"><h6>Prerequisites:</h6> </li>
+            <% if(modulelist[i].prerequisite != "nill")
+            {
+                var prereqlist = (((modulelist[i].prerequisite).split(',')));
+                for(var k =0 ; k<prereqlist.length ; k++)
+                { %>
+                    <li style= "float: left ; display: block ; padding: 10px"><h6><a href="/module_display?code=<%=prereqlist[k]%>"><%= prereqlist[k] %></a></h6></li>
+               <% }
+            } else{%>
+            <li style= "float: left ; display: block ; padding: 10px"><h6>NILL</h6></li>
+            <%}%>
+            </ul>
+        </footer>
+    </div>
+    <br><br>
+    
+
+<%}%>
+</div>
+

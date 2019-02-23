@@ -1,0 +1,85 @@
+<% include partials/header %>
+
+<div class="w3-panel  w3-opacity">
+        <% if(courselist.length===0){%>
+            <h1>Sorry, No Info available for this course</h1>
+            <h3>We are still populating our database, stay tuned!</h3>
+        <%}
+    else{%>
+    <h4 class = "w3-center w3-xlarge heading_color w3-bold" style="padding-bottom: 10px"><b>Computer Science courses available at <%= uniname %> </b></h4>
+    <h5 class = "w3-large w3-center heading_color" style="padding-top: 1px">Academic Year - <%= courselist[0].academic_year %></h5>
+    <h5 class="subheading w3-bold"><b>Undergraduate</b></h5>
+    <input type="text" id="ugInput" class="myInput" onkeyup="UGCoursefilter()" placeholder="Search for undergraduate courses..">
+    <ul class="myUL" id="ugcourses">
+        
+        <% for(var i=0; i < courselist.length; i++) { 
+            if(courselist[i].course_type==="Undergraduate")
+            { %>
+                <li><a href = "/modules?id=<%=courselist[i].courseid%>" class="show_courses" data-id=<%=courselist[i].courseid%>><%= courselist[i].course_name %></a></li>
+           <% } %>
+        
+       <% } %>
+    </ul>
+
+    <h5 class="subheading"><b>Postgraduate</b></h5>
+    <input type="text" id="pgInput" class="myInput" onkeyup="PGCoursefilter()" placeholder="Search for postgraduate courses..">
+    <ul class="myUL" id="pgcourses">
+        
+            <% for(var i=0; i < courselist.length; i++) { 
+                if(courselist[i].course_type==="Postgraduate")
+                { %>
+                    <li><a href = "/modules?id=<%=courselist[i].courseid%>" class="show_courses" data-id=<%=courselist[i].courseid%>><%= courselist[i].course_name %></a></li>
+               <% } %>
+            
+           <% } %>
+        </ul>
+
+
+</div>
+
+
+<!-- Issue with footer styling
+<% include partials/footer %>
+-->
+
+<script>
+    //For filtering courses
+
+
+//UG Courses
+function UGCoursefilter() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("ugInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("ugcourses");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+//PG Courses
+function PGCoursefilter() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("pgInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("pgcourses");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+
+    <%}%>

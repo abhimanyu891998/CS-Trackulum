@@ -1,0 +1,70 @@
+<% include partials/academic_header %>
+<script src="js/populatedb.js" type="text/javascript"></script>
+<header class="w3-panel w3-opacity" id="addmodule_div" style="padding:50px 16px">
+    <h1 style="padding-bottom: 20px" class="w3-center">Add a Module to the Database</h1>
+    <h2 class="w3-xlarge w3-center"  style="padding-bottom: 70px">Note: You can only add data for your registered university</h2>
+    <div id = "addmodule_status" style="padding: 20px"></div>
+    <div class = "w3-container">
+        <div class = "form-group" style="padding: 20px">
+            <label>University Name</label>
+            <select class="w3-input" name="uniname" id="addmodule_uniname">
+                <% for(var i=0 ; i<unidetails.length ; i++){ %>
+                    <option value="<%=unidetails[i].uid%>"><%=unidetails[i].uname%></option>
+                <% } %>
+            </select>
+        </div>
+
+        <div class = "form-group" style="padding: 20px">
+                <label>Course Name</label>
+                <select class="w3-input" name="coursename" id="addmodule_coursename">
+                    <% for(var i=0 ; i<coursedetails.length ; i++){ %>
+                        <option value="<%=coursedetails[i].courseid%>"><%=coursedetails[i].course_name%>  (<%=coursedetails[i].universityname%>)</option>
+                    <% } %>
+                </select>
+        </div>
+
+
+
+        <div class = "form-group" style="padding: 20px">
+                <label>Module Code</label><br>
+                <input type="text" class="form-control w3-input" name="modulecode" placeholder="Module Code" id="addmodule_modulecode">
+        </div>
+
+        <div class = "form-group" style="padding: 20px">
+                <label>Module Name</label><br>
+                <input type="text" class="form-control w3-input" name="modulename" placeholder="Module Name" id="addmodule_modulename">
+        </div>
+
+        <div class = "form-group" style="padding: 20px">
+                <label>Module Info</label><br>
+                <input type="text" class="form-control w3-input" name="moduleinfo" placeholder="Module Info" id="addmodule_moduleinfo">
+        </div>
+
+        <div class = "form-group" style="padding: 20px">
+                <label>Prerequisites (Insert comma separated course names, type nill if no prerequisite )</label><br>
+                <input type="text" class="form-control w3-input" name="prerequisite" placeholder="Prerequisites" id="addmodule_prerequisite">
+        </div>
+
+        <div class = "form-group" style="padding: 20px">
+                <label>Corequisites (Insert comma separated course names, type nill if no corequisite )</label><br>
+                <input type="text" class="form-control w3-input" name="corequisite" placeholder="Corequisites" id="addmodule_corequisite">
+        </div>
+
+
+      
+
+        
+        <div class = "form-group" style="padding: 20px">
+        <button type="submit" class="btn btn-default w3-center w3-teal w3-button" id="addmodule_submit">Submit</button>
+        </div>
+
+        </div>
+
+
+        
+
+
+
+
+    
+</header>

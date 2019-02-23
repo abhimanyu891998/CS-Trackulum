@@ -1,0 +1,34 @@
+<% include partials/header %>
+<div class="w3-panel w3-opacity">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for universities..">
+<ul id="myUL">
+    <% 
+    for(var i=0; i < dropdownvals.length; i++) { 
+        var uid = dropdownvals[i].uid; %>
+       <li><a href = "/courses?id=<%= dropdownvals[i].uid %>" class="show_unis" data-id="<%= dropdownvals[i].uid %>"><%= dropdownvals[i].uname %></a></li>
+    <% } %>
+</ul>
+</div>
+<!--Script to filter university course list-->
+<script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        
+</script>
+
+
+
+<% include partials/footer %>

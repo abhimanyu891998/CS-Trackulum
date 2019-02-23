@@ -1,0 +1,31 @@
+{
+  "name": "cs-trackulum",
+  "version": "1.0.0",
+  "description": "one stop to find all you want to know about how computer science is being taught around the world",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "^1.18.3",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.17.5",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "sqlpad": "^2.7.0"
+  }
+}

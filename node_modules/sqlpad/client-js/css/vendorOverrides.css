@@ -1,0 +1,61 @@
+/* Override navbar flexible height */
+.navbar {
+  height: 50px;
+  margin-bottom: 0px;
+}
+
+/* Override for pills in a navbar */
+.navbar-nav > li > a {
+  padding: 7px 15px;
+  margin-top: 8px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #fff !important;
+  background-color: #337ab7 !important;
+}
+
+/* Remove active dropdown menu look */
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  color: #333;
+  background-color: transparent;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #262626 !important;
+  text-decoration: none !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* hide tauchart's ui for export options */
+.graphical-report__layout__header {
+  display: none;
+}
+
+.DragHandle {
+  flex: 0 0 16px;
+  z-index: 2;
+  cursor: col-resize;
+  color: rgba(0, 0, 0, 0.2);
+}
+.DragHandle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.DragHandleActive,
+.DragHandleActive:hover {
+  color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.DragHandleIcon {
+  flex: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

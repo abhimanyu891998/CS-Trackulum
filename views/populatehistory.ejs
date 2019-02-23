@@ -1,0 +1,10 @@
+<% include partials/academic_header %>
+<header class="w3-panel w3-center w3-opacity" style="padding:50px 16px">
+<ul class="w3-ul w3-card-4 w3-center" style="width:100%">
+<% for(var i=0 ; i< posts.length ; i++){%>
+    <li style="padding: 20px"><b><%=posts[i].username %></b>  <%= posts[i].text %> at <%=posts[i].time%></li>
+<%}%>
+
+</ul>
+</header>
+
