@@ -18,6 +18,26 @@ This was a part of my summer research internship with Department of Computer Sci
 **Demo Video on how to use the application**
 [Youtube Link]()
 
+**Dependency List**
+- bcryptjs
+- body-parser
+- connect-flash
+- cookie-parser
+- dotenv
+- ejs
+- express
+- express-messages
+- express-session
+- express-validator
+- mongodb
+- mongoose
+- mysql
+- nodemon
+- passport
+- passport-http
+- passport-local
+- sqlpad
+
 
 
 
