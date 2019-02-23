@@ -16,8 +16,10 @@ This was a part of my summer research internship with Department of Computer Sci
 - The app should be running now on `localhost:3000`
 
 **Demo Video on how to use the application**
-[[Image](/Screenshot 2019-02-23 at 11.01.35 PM.png)]
-(https://www.youtube.com/watch?v=okPwni7t-e0&t=3s)
+[Image](
+        CS-Trackulum/Screenshot 2019-02-23 at 11.01.35 PM.png
+      )
+
 
 **Dependency List**
 - bcryptjs
