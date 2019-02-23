@@ -1,6 +1,6 @@
 # CS-Trackulum
 All in One portal to keep a track of computer science curriculum being taught around world.  
-This was a part of my summer research internship with Department of Computer Science at University College London, London. The project has been made under the supervision of [Dr. Ghita Kouadri Mostefaoui] (http://www.cs.ucl.ac.uk/people/G.KouadriMostefaoui.html/) from UCL Computer Science.
+This was a part of my summer research internship with Department of Computer Science at University College London, London. The project has been made under the supervision of [Dr. Ghita Kouadri Mostefaoui](http://www.cs.ucl.ac.uk/people/G.KouadriMostefaoui.html/) from UCL Computer Science.
 
 # User Manual and Deployment Instructions
 
